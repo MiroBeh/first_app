@@ -1,0 +1,18 @@
+.contact-heading {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 50px;
+}
+
+#contact-page-body {
+  background-color: #3f3f3f;
+}
+
+.contact-info {
+  text-align: center;
+}
+
+.contact-info h3,
+.contact-info p {
+  color: #fff;
+}
