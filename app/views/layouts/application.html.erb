@@ -2,31 +2,52 @@
 <html>
   <head>
     <title>FirstApp</title>
-    <%= csrf_meta_tags %>
 
+    <!--Stylesheets-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+    <!--Javascript-->
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <%= csrf_meta_tags %>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
   </head>
 
   <body>
-    <nav>
-      <ul>
-        <li>
-          <%= link_to "Home", root_path %>
-        </li>
-        <li>
-          <%= link_to "About", simple_pages_about_path  %>
-        </li>
-        <li>
-          <%= link_to "Contact", simple_pages_contact_path %>
-        </li>
-      </ul>
+    <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
+      <a class="navbar-brand" href="#"><%= image_tag "logo-bavarian-bikes", class:"logo-nav-header" %></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="nav navbar-nav navbar-right ml-auto">
+          <li class="nav-item">
+            <%= link_to "Home", root_path, class: "nav-link" %>
+          </li>
+          <li class="nav-item">
+            <%= link_to "About", simple_pages_about_path, class: "nav-link" %>
+          </li>
+          <li class="nav-item ">
+            <%= link_to "Contact", simple_pages_contact_path, class: "nav-link" %>
+          </li>
+        </ul>
+      </div>
     </nav>
 
 
     <%= yield %>
 
     <footer>
-      &copy; Miro Behninger 2018
+      <div class="footer-line">
+        <p>Bavarian Bikes</p>
+      </div>
+      <hr>
+      <div class="footer-line">
+        <p class="copyright">&copy; Miro Behninger 2018</p>
+      </div>
+    </footer>
   </body>
 </html>
