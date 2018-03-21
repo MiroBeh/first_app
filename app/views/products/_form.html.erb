@@ -26,6 +26,15 @@
     <%= form.text_field :image_url, id: :product_image_url %>
   </div>
 
+  <div class="field">
+    <%= form.label :colour %>
+    <%= form.text_field :colour, id: :product_color %>
+  </div>
+
+  <div class="field">
+    <%= form.label :price %>
+    <%= form.number_field :price , id: :product_price, step: :any %>
+
   <div class="actions">
     <%= form.submit %>
   </div>
