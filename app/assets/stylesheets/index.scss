@@ -1,18 +1,1 @@
-.screen-pic {
-  .opacity-header {
-    display: none;
-  }
-  @media screen and (min-width: 600px) {
-    background-image: image-url("big_hero_start.png");
-    background-size: cover;
-    height: 400px;
 
-    .opacity-header {
-      display: inline-block;
-      padding: 20px;
-      background-color: rgba(255,255,255, 0.5);
-      position: relative;
-      top: 200px;
-    }
-  }
-}
