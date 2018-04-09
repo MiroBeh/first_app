@@ -3,25 +3,86 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 /*Variables*/
-
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker|Roboto:300,400,500');
 $footer-line-height: 35px;
 
 /* Navbar */
-
-.logo-nav-header {
-  height: 40px;
-  margin-left:20px;
+.navbar-dark .navbar-brand {
+  color: #000;
 }
+
+.logo-heading {
+  font-size: 40px;
+  font-family: 'Permanent Marker', cursive;
+  margin-left: 20px;
+  &:hover {
+    color:#000!important;
+  }
+}
+
+.free-shipping{
+
+  background-color: #000;
+  text-align: center;
+  width: 100%;
+  height: 30px;
+  p {
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
 
 .navbar-right {
   margin-right:20px;
+}
+
+.bg-dark {
+  background-color: #fff!important;
+}
+
+
+.navbar-dark{
+  border-bottom: solid 2px #ff1a1a;
+  .navbar-nav {
+    .nav-item {
+      position: relative;
+      .nav-link {
+        padding-left: 40px;
+        color: #000;
+        font-size: 16px;
+        font-family: 'Roboto', sans-serif;
+        text-transform: uppercase;
+        &:hover {
+
+        }
+        &::before {
+          content: '';
+          display: block;
+          height: 3px;
+          width: 0%;
+          background-color: #000;
+          transition: all ease-in-out 400ms;
+        }
+        &:hover::before {
+          width: 100%;
+        }
+      }
+    }
+  }
 }
 
 /* Footer */
 
 footer {
   width: 100%;
-  background-color: #343a40;
+  background-color: #000;
+  border-top: solid 2.5px #ff1a1a;
+  padding-top: 5px;
   .footer-line {
     height: $footer-line-height;
     p {
@@ -42,4 +103,19 @@ footer {
     margin: 0 auto;
     background-color: #fff;
   }
+}
+
+.deselect ::selection {
+    background: transparent;
+    color: inherit;
+}
+.deselect ::-moz-selection {
+    background: transparent;
+    color: inherit;
+}
+.deselect {
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
 }

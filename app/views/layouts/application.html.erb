@@ -18,7 +18,7 @@
 
   <body>
     <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
-      <a class="navbar-brand" href="#"><%= image_tag "logo-bavarian-bikes.png", class:"logo-nav-header" %></a>
+      <%= link_to "Dashop.", root_path, class: "navbar-brand logo-heading deselect" %>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -39,13 +39,16 @@
         </ul>
       </div>
     </nav>
+    <div class="free-shipping">
+      <p>FREE SHIPPING</p>
+    </div>
 
 
     <%= yield %>
 
     <footer>
       <div class="footer-line">
-        <p>Bavarian Bikes</p>
+        <p>DaShop Example Shop</p>
       </div>
       <hr>
       <div class="footer-line">

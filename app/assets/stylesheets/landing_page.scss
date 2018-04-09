@@ -1,23 +1,135 @@
-.screen-pic {
-  .opacity-header {
-    display: none;
-  }
-  @media screen and (min-width: 600px) {
-    background-image: image-url("big_hero_start.png");
-    background-size: cover;
-    height: 400px;
+//Rebuilding Carousel icons with new color
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  outline: black;
+  background-size: 100%, 100%;
+  background-image: none;
+}
 
-    .opacity-header {
-      display: inline-block;
-      padding: 20px;
-      background-color: rgba(255,255,255, 0.5);
-      position: relative;
-      top: 200px;
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 55px;
+  color: #ff1a1a;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color: #ff1a1a;
+}
+//Area Women or men clothing
+.man-women-row {
+  display: flex;
+  justify-content: space-between;
+  .column {
+    width: 50%;
+    height: 500px;
+  }
+  .man {
+    background-image: image-url("male-clothing.jpg");
+    background-size: cover;
+    }
+  .women {
+    background-image: image-url("women-clothing.jpg");
+    background-size: cover;
+  }
+  button {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translateXY(-50%,-50%);
+    background-color: rgba(255,26,26,0.8);
+    border: 1px solid rgba(255,255,255,0.8);
+    color: rgba(255,255,255,0.8);
+  }
+}
+
+
+.quality-part {
+  border-right: 2px solid #f1f1f1;
+  .quality-content {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    top:50%;
+    transform: translateY(-50%);
+
+  }
+  h2 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 2.5rem;
+    opacity: 0.9;
+  }
+  p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    opacity: 0.9;
+  }
+}
+.random-picks {
+  border-left: 2px solid #f1f1f1;
+  h2 {
+    padding-top: 20px;
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 2.5rem;
+    opacity: 0.9;
+  }
+}
+
+//Carousel settings
+.carousel-item {
+  width: 400px;
+  height: 400px;
+  background-size: cover;
+}
+.mycarousel {
+  width: 400px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 20px;
+}
+//best sellers settings
+.best-sellers {
+  background-color: #f4f4f4;
+  .content-area{
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+    .heading {
+      text-align: center;
+    }
+    h3 {
+      font-size: 22px;
+      font-weight: 300;
     }
   }
 }
 
-.carousel-size {
-  width: 500px;
-  height: auto;
+.best-seller-picture {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 300px;
+  height: 300px;
+  background-size: cover;
+}
+
+.best-sellers-description {
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
 }

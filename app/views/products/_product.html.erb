@@ -1,11 +1,11 @@
-<div class="item col-sm-6 col-md-4 col-lg-3">
-  <h3><%=product.name%></h3>
-  <%= image_tag product.image_url, class: "item-pic img-fluid" %>
+<div class="item col-sm-12 col-md-6 col-lg-4 col-xl-3">
+  <h3 class="product-name"><%=product.name%></h3>
+  <div class="product-img" style="background-image: url(<%=image_path(product.image_url)%>)">
+  </div>
   <div class="description-item">
-    <p><%=product.description%></p>
-    <p><strong>Colour:</strong><%=product.colour%></p>
+    <p class="product-description"><%=product.description%></p>
     <hr>
-    <p class ="price"><strong><%=product.price%> €</strong></p>
+    <p class ="price"><%=product.price%> €</p>
   </div>
   <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %>
   <%= link_to 'Edit', edit_product_path(product) %>
