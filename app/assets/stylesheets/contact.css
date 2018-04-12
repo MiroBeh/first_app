@@ -1,18 +1,35 @@
-.contact-heading {
-  text-align: center;
-  color: #fff;
-  margin-bottom: 50px;
+.contact-body {
+  background-color: #f5f5f5;
 }
 
-#contact-page-body {
-  background-color: #3f3f3f;
+.contact-body hr {
+  width: 80%;
 }
+
+.contact-heading {
+  padding-top: 20px;
+  text-align: center;
+  color: #000;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 50px;
+}
+
+.red-dot {
+  color: #ff1a1a;
+}
+
 
 .contact-info {
+  padding-top: 20px;
+  width: 80%;
+  margin: 0 auto;
   text-align: center;
 }
 
 .contact-info h3,
 .contact-info p {
-  color: #fff;
+  color: #000;
+  font-family: 'Roboto', sans-serif;
 }

@@ -6,6 +6,8 @@
 @import url('https://fonts.googleapis.com/css?family=Permanent+Marker|Roboto:300,400,500');
 $footer-line-height: 35px;
 
+@import "helper/placeholder";
+
 /* Navbar */
 .navbar-dark .navbar-brand {
   color: #000;
@@ -13,7 +15,7 @@ $footer-line-height: 35px;
 
 .logo-heading {
   font-size: 40px;
-  font-family: 'Permanent Marker', cursive;
+  @extend %heading-font;
   margin-left: 20px;
   &:hover {
     color:#000!important;
@@ -28,7 +30,7 @@ $footer-line-height: 35px;
   height: 30px;
   p {
     color: #fff;
-    font-family: 'Roboto', sans-serif;
+    @extend %standard-font;
     font-size: 16px;
     position: relative;
     top: 50%;

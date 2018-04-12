@@ -1,0 +1,16 @@
+.product-container{
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+  .product-show-img {
+    width: 400px;
+    height: 400px;
+    background-size: cover;
+
+  }
+  .product-show-info {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
