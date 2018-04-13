@@ -78,6 +78,32 @@ $footer-line-height: 35px;
   }
 }
 
+.search-form {
+  padding-left: 40px;
+}
+
+.navbar-dark .navbar-toggler-icon svg {
+  fill: #000;
+}
+
+.btn-outline-success {
+  color: #ff1a1a;
+  border-color: #ff1a1a;
+  &:hover {
+    background-color: #ff1a1a;
+    border-color: #ff1a1a;
+  }
+}
+
+.form-control {
+  line-height: 1;
+  margin-top: 2px;
+
+  &:focus {
+    border-color: #ff1a1a;
+    box-shadow: 0 0 0 0.2rem rgba(255,26,26,.25)
+  }
+}
 /* Footer */
 
 footer {
