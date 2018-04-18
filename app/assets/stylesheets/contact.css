@@ -24,7 +24,7 @@
 .contact-info {
   padding-top: 20px;
   width: 80%;
-  margin: 0 auto;
+  margin: 0 auto!important;
   text-align: center;
 }
 
@@ -32,4 +32,10 @@
 .contact-info p {
   color: #000;
   font-family: 'Roboto', sans-serif;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding-bottom: 30px;
 }
