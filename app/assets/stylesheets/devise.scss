@@ -1,0 +1,35 @@
+@import "helper/placeholder";
+@import "helper/variables";
+
+//session new
+.login-container,
+.sign-in-container{
+  max-width: 300px;
+  padding-bottom: 50px;
+  h2 {
+    text-align: center;
+    @extend %standard-font;
+    padding-bottom: 20px;
+  }
+  .checkbox {
+    display: flex;
+    .session-checkbox{
+      margin-top: 2.2px;
+    }
+    .checkbox-label {
+      padding-left: 7px;
+      @extend %standard-font;
+    }
+  }
+}
+
+.actions {
+  .btn {
+    &:hover {
+      color: #fff;
+      background-color: $standard-color;
+    }
+  }
+}
+
+//registration new
