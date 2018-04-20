@@ -115,13 +115,16 @@ $footer-line-height: 35px;
     position: relative;
     transform: translateY(-5px);
   }
+  .Logout-button {
+    padding-left: 17px;
+  }
 
 }
 
-.notice,
-.alert {
-  display: none;
+.notice-alert {
+  margin-bottom: 0;
 }
+
 /* Footer */
 
 footer {

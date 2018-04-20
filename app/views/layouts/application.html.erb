@@ -43,21 +43,38 @@
           </li>
         </ul>
         <ul class="nav pull-right login-logout">
-          <li>
-            <% if user_signed_in? %>
-              <%= link_to('Logout', destroy_user_session_path, method: :delete) %>
-            <% else %>
-              <%= link_to("Login", new_user_session_path) %>
+          <% if user_signed_in? %>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <%= current_user.email %>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <%= link_to('Logout', destroy_user_session_path, method: :delete, class: "Logout-button") %>
+              </div>
+            </li>
+          <% else %>
+            <%= link_to new_user_session_path do %>
+            <span>Login</span>
             <% end %>
-          </li>
+          <% end %>
         </ul>
       </div>
     </nav>
     <div class="free-shipping">
       <p>FREE SHIPPING</p>
     </div>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
+    <% if notice %>
+      <div class="alert alert-danger notice-alert" role="alert">
+        <p class="notice"><%= notice %></p>
+      </div>
+    <% end %>
+    <% if alert %>
+      <div class="alert alert-danger notice-alert" role="alert">
+        <p class="alert"><%= alert %></p>
+      </div>
+    <% end %>
+
+
 
 
 
