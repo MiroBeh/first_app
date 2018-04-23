@@ -98,11 +98,6 @@ $footer-line-height: 35px;
 .form-control {
   line-height: 1;
   margin-top: 2px;
-
-  &:focus {
-    border-color: #ff1a1a;
-    box-shadow: 0 0 0 0.2rem rgba(255,26,26,.25)
-  }
 }
 
 .login-logout {
@@ -115,7 +110,7 @@ $footer-line-height: 35px;
     position: relative;
     transform: translateY(-5px);
   }
-  .Logout-button {
+  .dropdown-button {
     padding-left: 17px;
   }
 
