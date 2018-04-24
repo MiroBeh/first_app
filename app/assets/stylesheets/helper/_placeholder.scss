@@ -5,3 +5,9 @@
 %standard-font {
   font-family: 'Roboto', sans-serif;
 }
+
+%vertical-middle {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}

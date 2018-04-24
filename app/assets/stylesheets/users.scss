@@ -1,3 +1,18 @@
 // Place all the styles related to the users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+@import "helper/placeholder";
+//Show page
+.user-item {
+  text-align: center;
+  .vertical-middle {
+    @extend %vertical-middle;
+  }
+  h1 {
+    @extend %standard-font;
+  }
+  p {
+    @extend %standard-font;
+    font-size: 19px;
+  }
+}
