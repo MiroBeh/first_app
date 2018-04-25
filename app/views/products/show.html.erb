@@ -1,7 +1,9 @@
-<div class="product-container">
-  <div class="product-show-img" style="background-image: url(<%=image_path(@product.image_url)%>)">
+<div class="product-container row">
+  <div class="col-lg-6 col-md-6">
+    <div class="product-show-img" style="background-image: url(<%=image_path(@product.image_url)%>)">
+    </div>
   </div>
-  <div class="show-info">
+  <div class="show-info col-lg-6 col-md-6">
     <div class ="product-show-info">
       <p>
         <strong>Name:</strong>
