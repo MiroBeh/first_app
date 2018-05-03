@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
   devise_for :users, controllers: {registrations: 'users/registrations'}
   resources :users
-  resources :products
+  resources :products do
+    resources :comments
+  end
   root 'simple_pages#landing_page'
   get 'simple_pages/index'
   get 'simple_pages/about'
