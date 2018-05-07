@@ -3,6 +3,9 @@ class Ability
 
   def initialize(user)
     user ||= User.new #guest user
-    can :manage, User, id: user.id
+    can :create, :read, :update, User, id: user.id
+    if user.admin?
+      can :manage, :all
+    end
   end
 end
