@@ -10,6 +10,8 @@
     <hr>
     <p class ="price"><%=product.price%> €</p>
   </div>
-  <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %>
-  <%= link_to 'Edit', edit_product_path(product) %>
+  <% if signed_in? && current_user.admin? %>
+    <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %>
+    <%= link_to 'Edit', edit_product_path(product) %>
+  <% end %>
 </div>

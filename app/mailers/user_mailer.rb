@@ -7,4 +7,9 @@ class UserMailer < ApplicationMailer
           to: ENV['SENDGRID_EMAIL'],
           subject: "A new contact from #{name}")
   end
+
+  def welcome(user)
+    @appname = "DaShop"
+    mail(to: user.email, supject "Welcome to #{appname}!")
+  end
 end

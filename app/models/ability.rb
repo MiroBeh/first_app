@@ -2,8 +2,9 @@ class Ability
   include CanCan::Ability
 
   def initialize(user)
+    alias_action :create, :read, :update, to: :cru
     user ||= User.new #guest user
-    can :create, :read, :update, User, id: user.id
+    can :cru , User, id: user.id
     if user.admin?
       can :manage, :all
     end
