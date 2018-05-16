@@ -71,3 +71,5 @@ gem 'cancancan', '~> 2.0'
 
 # Pagination library for Rails
 gem 'will_paginate', '~> 3.1.1'
+
+gem 'rails-controller-testing'

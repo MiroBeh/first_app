@@ -50,6 +50,11 @@ RSpec.configure do |config|
   # https://relishapp.com/rspec/rspec-rails/docs
   config.infer_spec_type_from_file_location!
 
+  # For Devise >= 4.1.0
+ config.include Devise::Test::ControllerHelpers, :type => :controller
+ # Use the following instead if you are on Devise <= 4.1.1
+ # config.include Devise::TestHelpers, :type => :controller
+
   # Filter lines from Rails gems in backtraces.
   config.filter_rails_from_backtrace!
   # arbitrary gems may also be filtered via:
