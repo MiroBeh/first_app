@@ -3,7 +3,7 @@ require 'rails_helper'
 describe Product do
   context "when the product has comments" do
     let(:product) {Product.create!(name: "Black Shirt")}
-    let(:user) {User.create!(first_name: "Mike", last_name: "Tester", email: "test@web.de", password: "testpassword")}
+    let(:user) { FactoryBot.create(:user)}
 
     before do
       product.comments.create!(rating: 1, user: user, body: "Awful")
