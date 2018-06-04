@@ -27,8 +27,13 @@
           <div class="rated" data-score="<%= @product.average_rating %>"></div>
         </p>
         <p>
-          <%= form_with(url: '/payments/create') do |form| %>
-            <%= render partial: "shared/stripe_checkout_button" %>
+          <% if user_signed_in? %>
+            <%= form_with(url: '/payments') do |form| %>
+              <%= render partial: "shared/stripe_checkout_button" %>
+              <%= hidden_field_tag(:product_id, @product.id) %>
+            <% end %>
+          <% else %>
+            <button class="btn btn-secondary">Please login to buy our stuff.</button>
           <% end %>
         </p>
       </div>
