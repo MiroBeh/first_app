@@ -9,6 +9,7 @@
     <p class="product-description"><%=product.description%></p>
     <hr>
     <p class ="price"><%=product.price%> €</p>
+    <% logger.debug "Product: #{product.name}" %>
   </div>
   <% if signed_in? && current_user.admin? %>
     <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %>
