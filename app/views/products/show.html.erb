@@ -1,7 +1,8 @@
 <div class="container">
   <div class="product-container row">
     <div class="col-md-6">
-      <div class="product-show-img" style="background-image: url(<%=image_path(@product.image_url)%>)">
+      <div class="product-show-img">
+        <%=image_tag(@product.image_url, class:"img-show product-show-img", data_zoom_image:"@product.image_url")%>
       </div>
     </div>
     <div class="show-info col-md-6">

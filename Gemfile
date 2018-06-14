@@ -36,6 +36,9 @@ gem 'jbuilder', '~> 2.5'
 #gem to use jquery
 gem 'jquery-rails'
 
+#brakeman security checker
+gem 'brakeman', '~> 4.3'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
@@ -76,3 +79,5 @@ gem 'will_paginate', '~> 3.1.1'
 gem 'rails-controller-testing'
 
 gem 'stripe'
+
+gem 'rails-html-sanitizer', '~> 1.0.4'
