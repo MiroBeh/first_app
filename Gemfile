@@ -81,3 +81,5 @@ gem 'rails-controller-testing'
 gem 'stripe'
 
 gem 'rails-html-sanitizer', '~> 1.0.4'
+
+gem 'dalli'
