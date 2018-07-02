@@ -1,20 +1,20 @@
 <!-- standard design for all products for the product page -->
 <% cache product do %>
-<div class="item col-sm-12 col-md-6 col-lg-4 col-xl-3">
-  <h3 class="product-name"><%=product.name%></h3>
-  <%= link_to product do %>
-  <div class="product-img" style="background-image: url(<%=image_path(product.image_url)%>)">
+  <div class="item col-sm-12 col-md-6 col-lg-4 col-xl-3">
+    <h3 class="product-name"><%=product.name%></h3>
+    <%= link_to product do %>
+      <div class="product-img" style="background-image: url(<%=image_path(product.image_url)%>)">
+      </div>
+    <%end%>
+    <div class="description-item">
+      <p class="product-description"><%=product.description%></p>
+      <hr>
+      <p class ="price"><%=product.price%> €</p>
+      <% logger.debug "Product: #{product.name}" %>
+    </div>
+    <% if signed_in? && current_user.admin? %>
+      <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %>
+      <%= link_to 'Edit', edit_product_path(product) %>
+    <% end %>
   </div>
-  <%end%>
-  <div class="description-item">
-    <p class="product-description"><%=product.description%></p>
-    <hr>
-    <p class ="price"><%=product.price%> €</p>
-    <% logger.debug "Product: #{product.name}" %>
-  </div>
-  <% if signed_in? && current_user.admin? %>
-    <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %>
-    <%= link_to 'Edit', edit_product_path(product) %>
-  <% end %>
-</div>
 <% end %>

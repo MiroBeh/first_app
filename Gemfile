@@ -83,3 +83,6 @@ gem 'stripe'
 gem 'rails-html-sanitizer', '~> 1.0.4'
 
 gem 'dalli'
+
+#redis-rails provides a full set of stores (Cache, Session, HTTP Cache) for Ruby on Rails.
+gem 'redis-rails'
