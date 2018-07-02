@@ -1,0 +1,845 @@
+/* line 5, /home/miro/first_app/app/assets/stylesheets/comments.scss */
+.digg_pagination {
+  background: white;
+  cursor: default;
+  /* self-clearing method: */
+}
+
+/* line 9, /home/miro/first_app/app/assets/stylesheets/comments.scss */
+.digg_pagination a, .digg_pagination span, .digg_pagination em {
+  padding: 0.2em 0.5em;
+  display: block;
+  float: left;
+  margin-right: 1px;
+}
+
+/* line 14, /home/miro/first_app/app/assets/stylesheets/comments.scss */
+.digg_pagination .disabled {
+  color: #999999;
+  border: 1px solid #dddddd;
+}
+
+/* line 17, /home/miro/first_app/app/assets/stylesheets/comments.scss */
+.digg_pagination .current {
+  font-style: normal;
+  font-weight: bold;
+  background: #2e6ab1;
+  color: white;
+  border: 1px solid #2e6ab1;
+}
+
+/* line 23, /home/miro/first_app/app/assets/stylesheets/comments.scss */
+.digg_pagination a {
+  text-decoration: none;
+  color: #105cb6;
+  border: 1px solid #9aafe5;
+}
+
+/* line 27, /home/miro/first_app/app/assets/stylesheets/comments.scss */
+.digg_pagination a:hover, .digg_pagination a:focus {
+  color: #000033;
+  border-color: #000033;
+}
+
+/* line 30, /home/miro/first_app/app/assets/stylesheets/comments.scss */
+.digg_pagination .page_info {
+  background: #2e6ab1;
+  color: white;
+  padding: 0.4em 0.6em;
+  width: 22em;
+  margin-bottom: 0.3em;
+  text-align: center;
+}
+
+/* line 37, /home/miro/first_app/app/assets/stylesheets/comments.scss */
+.digg_pagination .page_info b {
+  color: #000033;
+  background: #6aa6ed;
+  padding: 0.1em 0.25em;
+}
+
+/* line 41, /home/miro/first_app/app/assets/stylesheets/comments.scss */
+.digg_pagination:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+/* line 47, /home/miro/first_app/app/assets/stylesheets/comments.scss */
+* html .digg_pagination {
+  height: 1%;
+}
+
+/* line 49, /home/miro/first_app/app/assets/stylesheets/comments.scss */
+*:first-child + html .digg_pagination {
+  overflow: hidden;
+}
+.contact-body {
+  background-color: #f5f5f5;
+}
+
+.contact-body hr {
+  width: 80%;
+}
+
+.contact-heading {
+  padding-top: 20px;
+  text-align: center;
+  color: #000;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 50px;
+}
+
+.red-dot {
+  color: #ff1a1a;
+}
+
+
+.contact-info {
+  padding-top: 20px;
+  width: 80%;
+  margin: 0 auto!important;
+  text-align: center;
+}
+
+.contact-info h3,
+.contact-info p {
+  color: #000;
+  font-family: 'Roboto', sans-serif;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+/* line 5, /home/miro/first_app/app/assets/stylesheets/helper/_placeholder.scss */
+.login-container h2,
+.sign-in-container h2, .login-container .checkbox .checkbox-label,
+.sign-in-container .checkbox .checkbox-label {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* line 5, /home/miro/first_app/app/assets/stylesheets/devise.scss */
+.login-container,
+.sign-in-container {
+  max-width: 300px;
+  padding-bottom: 50px;
+}
+/* line 9, /home/miro/first_app/app/assets/stylesheets/devise.scss */
+.login-container h2,
+.sign-in-container h2 {
+  text-align: center;
+  padding-bottom: 20px;
+}
+/* line 14, /home/miro/first_app/app/assets/stylesheets/devise.scss */
+.login-container .checkbox,
+.sign-in-container .checkbox {
+  display: flex;
+}
+/* line 16, /home/miro/first_app/app/assets/stylesheets/devise.scss */
+.login-container .checkbox .session-checkbox,
+.sign-in-container .checkbox .session-checkbox {
+  margin-top: 2.2px;
+}
+/* line 19, /home/miro/first_app/app/assets/stylesheets/devise.scss */
+.login-container .checkbox .checkbox-label,
+.sign-in-container .checkbox .checkbox-label {
+  padding-left: 7px;
+}
+
+/* line 28, /home/miro/first_app/app/assets/stylesheets/devise.scss */
+.actions .btn:hover {
+  color: #fff;
+  background-color: #ff1a1a;
+}
+/* line 1, /home/miro/first_app/app/assets/stylesheets/form.scss */
+.form-container {
+  width: 80%;
+  margin: 0 auto;
+}
+/* line 1, /home/miro/first_app/app/assets/stylesheets/helper/_placeholder.scss */
+.quality-part h2, .random-picks h2 {
+  font-family: 'Permanent Marker', cursive;
+}
+
+/* line 4, /home/miro/first_app/app/assets/stylesheets/landing_page.scss */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  outline: black;
+  background-size: 100%, 100%;
+  background-image: none;
+}
+
+/* line 13, /home/miro/first_app/app/assets/stylesheets/landing_page.scss */
+.carousel-control-next-icon:after {
+  content: '>';
+  font-size: 55px;
+  color: #ff1a1a;
+}
+
+/* line 20, /home/miro/first_app/app/assets/stylesheets/landing_page.scss */
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color: #ff1a1a;
+}
+
+/* line 26, /home/miro/first_app/app/assets/stylesheets/landing_page.scss */
+.man-women-row {
+  display: flex;
+  justify-content: space-between;
+}
+/* line 29, /home/miro/first_app/app/assets/stylesheets/landing_page.scss */
+.man-women-row .column {
+  width: 50%;
+  height: 500px;
+}
+@media only screen and (max-width: 850px) {
+  /* line 26, /home/miro/first_app/app/assets/stylesheets/landing_page.scss */
+  .man-women-row {
+    display: block;
+  }
+  /* line 35, /home/miro/first_app/app/assets/stylesheets/landing_page.scss */
+  .man-women-row .column {
+    width: 100%;
+    height: 300px;
+  }
+}
+/* line 41, /home/miro/first_app/app/assets/stylesheets/landing_page.scss */
+.man-women-row .man {
+  background-image: url(/assets/male-clothing-f8b53938d46121541d34ebe8db9ccb7a4fe82eacaccf7850038805032249c213.jpg);
+  background-size: cover;
+  background-position: center top;
+}
+/* line 46, /home/miro/first_app/app/assets/stylesheets/landing_page.scss */
+.man-women-row .women {
+  background-image: url(/assets/women-clothing-deef52912f8addee3cb5d87ce859347f1ca509cc11f8a720ae3732b32fed9b29.jpg);
+  background-size: cover;
+  background-position: center top;
+}
+/* line 51, /home/miro/first_app/app/assets/stylesheets/landing_page.scss */
+.man-women-row button {
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 26, 26, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* line 63, /home/miro/first_app/app/assets/stylesheets/landing_page.scss */
+.quality-part {
+  border-right: 2px solid #f1f1f1;
+}
+/* line 65, /home/miro/first_app/app/assets/stylesheets/landing_page.scss */
+.quality-part .quality-content {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+/* line 73, /home/miro/first_app/app/assets/stylesheets/landing_page.scss */
+.quality-part h2 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  font-size: 2.5rem;
+  opacity: 0.9;
+}
+/* line 81, /home/miro/first_app/app/assets/stylesheets/landing_page.scss */
+.quality-part p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+/* line 87, /home/miro/first_app/app/assets/stylesheets/landing_page.scss */
+.random-picks {
+  border-left: 2px solid #f1f1f1;
+}
+/* line 89, /home/miro/first_app/app/assets/stylesheets/landing_page.scss */
+.random-picks h2 {
+  padding-top: 20px;
+  text-align: center;
+  font-size: 2.5rem;
+  opacity: 0.9;
+}
+
+/* line 98, /home/miro/first_app/app/assets/stylesheets/landing_page.scss */
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* line 104, /home/miro/first_app/app/assets/stylesheets/landing_page.scss */
+.carousel-item {
+  max-width: 400px;
+  height: 400px;
+  background-size: cover;
+  background-position: center top;
+}
+
+/* line 111, /home/miro/first_app/app/assets/stylesheets/landing_page.scss */
+.mycarousel {
+  max-width: 400px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 20px;
+}
+
+/* line 119, /home/miro/first_app/app/assets/stylesheets/landing_page.scss */
+.product-link {
+  color: white;
+}
+/* line 121, /home/miro/first_app/app/assets/stylesheets/landing_page.scss */
+.product-link:hover {
+  text-decoration-color: white;
+}
+
+/* line 126, /home/miro/first_app/app/assets/stylesheets/landing_page.scss */
+.best-sellers {
+  background-color: #f4f4f4;
+}
+/* line 128, /home/miro/first_app/app/assets/stylesheets/landing_page.scss */
+.best-sellers .content-area {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+/* line 134, /home/miro/first_app/app/assets/stylesheets/landing_page.scss */
+.best-sellers .content-area .heading {
+  text-align: center;
+}
+/* line 137, /home/miro/first_app/app/assets/stylesheets/landing_page.scss */
+.best-sellers .content-area h3 {
+  font-size: 22px;
+  font-weight: 300;
+}
+
+/* line 144, /home/miro/first_app/app/assets/stylesheets/landing_page.scss */
+.best-seller-picture {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 300px;
+  height: 300px;
+  background-size: cover;
+}
+
+/* line 153, /home/miro/first_app/app/assets/stylesheets/landing_page.scss */
+.best-sellers-description {
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+}
+/* line 5, /home/miro/first_app/app/assets/stylesheets/helper/_placeholder.scss */
+.product-container .product-show-info p {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* line 3, /home/miro/first_app/app/assets/stylesheets/product-show.scss */
+.product-container {
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+/* line 8, /home/miro/first_app/app/assets/stylesheets/product-show.scss */
+.product-container .product-show-img {
+  float: right;
+  width: 400px;
+  height: 400px;
+  background-size: cover;
+}
+@media only screen and (max-width: 770px) {
+  /* line 8, /home/miro/first_app/app/assets/stylesheets/product-show.scss */
+  .product-container .product-show-img {
+    float: none;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+@media only screen and (max-width: 430px) {
+  /* line 8, /home/miro/first_app/app/assets/stylesheets/product-show.scss */
+  .product-container .product-show-img {
+    width: 350px;
+    height: 350px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+@media only screen and (max-width: 380px) {
+  /* line 8, /home/miro/first_app/app/assets/stylesheets/product-show.scss */
+  .product-container .product-show-img {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media only screen and (max-width: 330px) {
+  /* line 8, /home/miro/first_app/app/assets/stylesheets/product-show.scss */
+  .product-container .product-show-img {
+    width: 250px;
+    height: 250px;
+  }
+}
+/* line 35, /home/miro/first_app/app/assets/stylesheets/product-show.scss */
+.product-container .product-show-info {
+  max-width: 400px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+/* line 40, /home/miro/first_app/app/assets/stylesheets/product-show.scss */
+.product-container .product-show-info p {
+  font-size: 16px;
+}
+
+/* line 50, /home/miro/first_app/app/assets/stylesheets/product-show.scss */
+.comments-row {
+  display: block;
+}
+/* line 4, /home/miro/first_app/app/assets/stylesheets/products.scss */
+.heading {
+  text-align: center;
+  font-family: 'Permanent Marker', cursive;
+}
+
+/* line 9, /home/miro/first_app/app/assets/stylesheets/products.scss */
+.description-item {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+/* line 13, /home/miro/first_app/app/assets/stylesheets/products.scss */
+.description-item p {
+  font-size: 16px;
+  margin-bottom: 0;
+}
+/* line 17, /home/miro/first_app/app/assets/stylesheets/products.scss */
+.description-item hr {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+/* line 21, /home/miro/first_app/app/assets/stylesheets/products.scss */
+.description-item .price {
+  text-align: right;
+  padding-right: 10px;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* line 28, /home/miro/first_app/app/assets/stylesheets/products.scss */
+.portfolio-line {
+  width: 90%;
+  margin: 0 auto;
+}
+/* line 31, /home/miro/first_app/app/assets/stylesheets/products.scss */
+.portfolio-line .row {
+  width: 100%;
+  margin: 0 auto;
+}
+/* line 35, /home/miro/first_app/app/assets/stylesheets/products.scss */
+.portfolio-line .item {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+/* line 41, /home/miro/first_app/app/assets/stylesheets/products.scss */
+.product-img {
+  width: 350px;
+  height: 350px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  background-size: cover;
+}
+
+/* line 51, /home/miro/first_app/app/assets/stylesheets/products.scss */
+.item .product-name {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  text-align: center;
+}
+/* line 56, /home/miro/first_app/app/assets/stylesheets/products.scss */
+.item .product-description {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+/* line 1, /home/miro/first_app/app/assets/stylesheets/scaffolds.scss */
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 9, /home/miro/first_app/app/assets/stylesheets/scaffolds.scss */
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 15, /home/miro/first_app/app/assets/stylesheets/scaffolds.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 23, /home/miro/first_app/app/assets/stylesheets/scaffolds.scss */
+th {
+  padding-bottom: 5px;
+}
+
+/* line 27, /home/miro/first_app/app/assets/stylesheets/scaffolds.scss */
+td {
+  padding: 0 5px 7px;
+}
+
+/* line 32, /home/miro/first_app/app/assets/stylesheets/scaffolds.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 37, /home/miro/first_app/app/assets/stylesheets/scaffolds.scss */
+#notice {
+  color: green;
+}
+
+/* line 41, /home/miro/first_app/app/assets/stylesheets/scaffolds.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 47, /home/miro/first_app/app/assets/stylesheets/scaffolds.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px 7px 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 54, /home/miro/first_app/app/assets/stylesheets/scaffolds.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px -7px 0;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 64, /home/miro/first_app/app/assets/stylesheets/scaffolds.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+/* line 70, /home/miro/first_app/app/assets/stylesheets/scaffolds.scss */
+label {
+  display: block;
+}
+/*Variables*/
+/* line 1, /home/miro/first_app/app/assets/stylesheets/helper/_placeholder.scss */
+.logo-heading {
+  font-family: 'Permanent Marker', cursive;
+}
+
+/* line 5, /home/miro/first_app/app/assets/stylesheets/helper/_placeholder.scss */
+.free-shipping p {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Navbar */
+/* line 13, /home/miro/first_app/app/assets/stylesheets/simple_pages.scss */
+.navbar-dark .navbar-brand {
+  color: #000;
+}
+
+/* line 17, /home/miro/first_app/app/assets/stylesheets/simple_pages.scss */
+.logo-heading {
+  font-size: 40px;
+  margin-left: 20px;
+}
+/* line 21, /home/miro/first_app/app/assets/stylesheets/simple_pages.scss */
+.logo-heading:hover {
+  color: #000 !important;
+}
+
+/* line 26, /home/miro/first_app/app/assets/stylesheets/simple_pages.scss */
+.navbar-dark .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+/* line 32, /home/miro/first_app/app/assets/stylesheets/simple_pages.scss */
+.free-shipping {
+  background-color: #000;
+  text-align: center;
+  width: 100%;
+  height: 30px;
+}
+/* line 38, /home/miro/first_app/app/assets/stylesheets/simple_pages.scss */
+.free-shipping p {
+  color: #fff;
+  font-size: 16px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* line 49, /home/miro/first_app/app/assets/stylesheets/simple_pages.scss */
+.navbar-right {
+  margin-right: 20px;
+}
+
+/* line 53, /home/miro/first_app/app/assets/stylesheets/simple_pages.scss */
+.bg-dark {
+  background-color: #fff !important;
+}
+
+/* line 58, /home/miro/first_app/app/assets/stylesheets/simple_pages.scss */
+.navbar-dark {
+  border-bottom: solid 2px #ff1a1a;
+}
+/* line 61, /home/miro/first_app/app/assets/stylesheets/simple_pages.scss */
+.navbar-dark .navbar-nav .nav-item {
+  position: relative;
+}
+/* line 63, /home/miro/first_app/app/assets/stylesheets/simple_pages.scss */
+.navbar-dark .navbar-nav .nav-item .nav-link {
+  padding-left: 40px;
+  color: #000;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+}
+/* line 72, /home/miro/first_app/app/assets/stylesheets/simple_pages.scss */
+.navbar-dark .navbar-nav .nav-item .nav-link::before {
+  content: '';
+  display: block;
+  height: 3px;
+  width: 0%;
+  background-color: #000;
+  transition: all ease-in-out 400ms;
+}
+/* line 80, /home/miro/first_app/app/assets/stylesheets/simple_pages.scss */
+.navbar-dark .navbar-nav .nav-item .nav-link:hover::before {
+  width: 100%;
+}
+
+/* line 88, /home/miro/first_app/app/assets/stylesheets/simple_pages.scss */
+.search-form {
+  padding-left: 40px;
+}
+
+/* line 92, /home/miro/first_app/app/assets/stylesheets/simple_pages.scss */
+.navbar-dark .navbar-toggler-icon svg {
+  fill: #000;
+}
+
+/* line 96, /home/miro/first_app/app/assets/stylesheets/simple_pages.scss */
+.btn-outline-success {
+  color: #ff1a1a;
+  border-color: #ff1a1a;
+}
+/* line 99, /home/miro/first_app/app/assets/stylesheets/simple_pages.scss */
+.btn-outline-success:hover {
+  background-color: #ff1a1a;
+  border-color: #ff1a1a;
+}
+
+/* line 105, /home/miro/first_app/app/assets/stylesheets/simple_pages.scss */
+.form-control {
+  line-height: 1;
+  margin-top: 2px;
+}
+
+/* line 111, /home/miro/first_app/app/assets/stylesheets/simple_pages.scss */
+.login-logout a {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #000;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  position: relative;
+  transform: translateY(-5px);
+}
+/* line 120, /home/miro/first_app/app/assets/stylesheets/simple_pages.scss */
+.login-logout .dropdown-button {
+  padding-left: 17px;
+}
+
+/* line 126, /home/miro/first_app/app/assets/stylesheets/simple_pages.scss */
+.notice-alert {
+  margin-bottom: 0;
+}
+
+/* Footer */
+/* line 132, /home/miro/first_app/app/assets/stylesheets/simple_pages.scss */
+footer {
+  width: 100%;
+  background-color: #000;
+  border-top: solid 2.5px #ff1a1a;
+  padding-top: 5px;
+}
+/* line 137, /home/miro/first_app/app/assets/stylesheets/simple_pages.scss */
+footer .footer-line {
+  height: 35px;
+}
+/* line 139, /home/miro/first_app/app/assets/stylesheets/simple_pages.scss */
+footer .footer-line p {
+  color: #fff;
+  padding-left: 5%;
+  padding-top: 8px;
+  margin-bottom: 0;
+}
+/* line 145, /home/miro/first_app/app/assets/stylesheets/simple_pages.scss */
+footer .footer-line .copyright {
+  color: #fff;
+  text-align: right;
+  padding-right: 5%;
+  padding-top: 4px;
+}
+/* line 152, /home/miro/first_app/app/assets/stylesheets/simple_pages.scss */
+footer hr {
+  width: 90%;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+/* line 159, /home/miro/first_app/app/assets/stylesheets/simple_pages.scss */
+.deselect ::selection {
+  background: transparent;
+  color: inherit;
+}
+
+/* line 163, /home/miro/first_app/app/assets/stylesheets/simple_pages.scss */
+.deselect ::-moz-selection {
+  background: transparent;
+  color: inherit;
+}
+
+/* line 167, /home/miro/first_app/app/assets/stylesheets/simple_pages.scss */
+.deselect {
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+/* line 174, /home/miro/first_app/app/assets/stylesheets/simple_pages.scss */
+.notice {
+  background-color: #98FB98;
+  border: none;
+}
+/* line 5, /home/miro/first_app/app/assets/stylesheets/helper/_placeholder.scss */
+.user-item h1, .user-item p {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* line 9, /home/miro/first_app/app/assets/stylesheets/helper/_placeholder.scss */
+.user-item .vertical-middle {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* line 6, /home/miro/first_app/app/assets/stylesheets/users.scss */
+.user-item {
+  text-align: center;
+}
+/* line 14, /home/miro/first_app/app/assets/stylesheets/users.scss */
+.user-item p {
+  font-size: 19px;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+
+ */
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content-panel {
+  flex: 1;
+}
+.cancel-on-png, .cancel-off-png, .star-on-png, .star-off-png, .star-half-png {
+  font-size: 2em;
+}
+
+@font-face {
+  font-family: "raty";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./fonts/raty.eot");
+  src: url("./fonts/raty.eot?#iefix") format("embedded-opentype");
+  src: url("./fonts/raty.svg#raty") format("svg");
+  src: url("./fonts/raty.ttf") format("truetype");
+  src: url("./fonts/raty.woff") format("woff");
+}
+
+.cancel-on-png, .cancel-off-png, .star-on-png, .star-off-png, .star-half-png {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: "raty";
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  speak: none;
+  text-transform: none;
+}
+
+.cancel-on-png:before {
+  content: "\e600";
+}
+
+.cancel-off-png:before {
+  content: "\e601";
+}
+
+.star-on-png:before {
+  content: "\f005";
+}
+
+.star-off-png:before {
+  content: "\f006";
+}
+
+.star-half-png:before {
+  content: "\f123";
+}
