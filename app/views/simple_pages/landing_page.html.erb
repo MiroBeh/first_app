@@ -50,6 +50,7 @@
     <div class="heading">
       <h3>BEST SELLING PRODUCTS</h3>
     </div>
+    <% cache do %>
     <div class="row">
       <% @bestSeller.each do |product| %>
         <div class="best-sellers-item col-md-6 col-lg-6 col-xl-3">
@@ -61,5 +62,6 @@
         </div>
       <% end %>
     </div>
+    <% end %>
   </div>
 </div><!-- End best seller area -->
