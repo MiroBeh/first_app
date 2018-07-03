@@ -8,6 +8,9 @@ class ProductsController < ApplicationController
     if params[:q]
       search_term = params[:q]
       @products = Product.search(search_term)
+    elsif params[:gender]
+      search_gender = params[:gender]
+      @products = Product.where(gender: search_gender)
     else
       @products = Product.all
     end
@@ -85,6 +88,6 @@ class ProductsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def product_params
-      params.require(:product).permit(:name, :description, :image_url, :colour, :price)
+      params.require(:product).permit(:name, :description, :image_url, :colour, :price, :gender)
     end
 end

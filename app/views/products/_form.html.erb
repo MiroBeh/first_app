@@ -15,7 +15,7 @@
     <div class="field form-group">
       <%= form.label :name %>
       <%= form.text_field :name, id: :product_name, class: 'form-control' %>
-    </div> 
+    </div>
 
     <div class="field form-group">
       <%= form.label :description %>
@@ -36,6 +36,12 @@
       <%= form.label :price %>
       <%= form.number_field :price , id: :product_price, step: :any, class: 'form-control' %>
     </div>
+
+    <div class="field form-group">
+      <%= form.label :gender %>
+      <%= form.text_area :gender, id: :product_gender, class: 'form-control' %>
+    </div>
+
     <div class="actions">
       <%= form.submit %>
     </div>
