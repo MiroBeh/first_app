@@ -1,10 +1,10 @@
 <!-- man and women selection section -->
 <div class="man-women-row">
   <div class="man column">
-    <button class="btn">men</button>
+    <%= link_to "<button class='btn'>men</button>".html_safe, products_path(gender: "men"), :id=>"men-btn", :class=>"men-btn" %>
   </div>
   <div class="women column">
-    <button class="btn"></span>women </button>
+    <%= link_to "<button class='btn'>women</button>".html_safe, products_path(gender: "women"), :id=>"women-btn", :class=>"women-btn" %>
   </div>
 </div><!-- end man / women section -->
 
