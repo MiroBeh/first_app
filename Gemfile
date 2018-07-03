@@ -86,3 +86,5 @@ gem 'dalli'
 
 #redis-rails provides a full set of stores (Cache, Session, HTTP Cache) for Ruby on Rails.
 gem 'redis-rails'
+
+gem 'newrelic_rpm'
