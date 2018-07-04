@@ -99,4 +99,8 @@ Rails.application.configure do
 
   #mailing host
   config.action_mailer.default_url_options = { host: 'https://dashop.herokuapp.com/' }
+
+  #allowing actioncable in production
+  config.web_socket_server_url = "wss://dashop.herokuapp.com/cable"
+  config.action_cable.allowed_request_origins = ['https://dashop.herokuapp.com', 'http://dashop.herokuapp.com']
 end
