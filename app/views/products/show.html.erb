@@ -1,9 +1,10 @@
 <div class="container">
   <div class="product-container row">
       <div class="col-md-6">
-        <div class="product-show-img">
-          <%=image_tag(@product.image_url, class:"img-show product-show-img", data_zoom_image:"@product.image_url")%>
-        </div>
+<% cache do %>
+          <div class="product-show-img">
+            <%=image_tag(@product.image_url, class:"img-show product-show-img", data_zoom_image:"@product.image_url")%>
+          </div>
       </div>
       <div class="show-info col-md-6">
         <div class ="product-show-info">
@@ -23,6 +24,7 @@
             <strong>Price:</strong>
             <%= @product.price %> €
           </p>
+<% end %>
           <p>
             <strong>Average rating:</strong>
             <div class="rated" id="average-rating" data-score="<%= @product.average_rating %>"></div>
@@ -45,7 +47,9 @@
   </div><!-- end row -->
   <%= render 'new_comment' %>
   <div>
-  <%= render 'comments' %>
+  <% cache @comments do %>
+    <%= render 'comments' %>
+  <% end %>
   <%= will_paginate @comments, class: "digg_pagination" %>
   </div>
 </div>
