@@ -41,7 +41,7 @@
               <%= hidden_field_tag(:product_id, @product.id) %>
             <% end %>
           <% else %>
-            <button class="btn btn-secondary">Please login to buy our stuff.</button>
+            <%= link_to '<button class="btn btn-secondary">Please login to buy our stuff.</button>'.html_safe, new_user_session_path %>
           <% end %>
         </p>
       </div>
