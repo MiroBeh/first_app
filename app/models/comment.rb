@@ -7,4 +7,6 @@ class Comment < ApplicationRecord
 
   scope :rating_desc, -> { order(rating: :desc) }
   scope :rating_desc_reverse, -> { order(rating: :desc).reverse }
+
+  after_create_commit { CommentUpdateJob.perform_later(self, self.user) }
 end

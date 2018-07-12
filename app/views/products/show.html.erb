@@ -1,7 +1,7 @@
 <div class="alert alert-info" style="display:none" role="alert">A new comment was posted!</div>
 <!--Detail look on only one Product-->
 <div class="container">
-  <div class="product-container row">
+  <div class="product-container row" data-product-id="<%= @product.id %>">
       <div class="col-md-6">
 <% cache do %>
           <div class="product-show-img">
@@ -49,9 +49,7 @@
   </div><!-- end row -->
   <%= render 'new_comment' %>
   <div>
-  <% cache @comments do %>
-    <%= render 'comments' %>
-  <% end %>
+  <%= render 'comments' %>
   <%= will_paginate @comments, class: "digg_pagination" %>
   </div>
 </div>
