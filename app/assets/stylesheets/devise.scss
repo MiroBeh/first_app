@@ -3,9 +3,14 @@
 
 //session new
 .login-container,
-.sign-in-container{
+.sign-in-container,
+.new-password {
   max-width: 300px;
   padding-bottom: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
   h2 {
     text-align: center;
     @extend %standard-font;
