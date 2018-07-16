@@ -8,4 +8,12 @@ FactoryBot.define do
     last_name "Tester"
     admin false
   end
+
+  factory :admin, class User do
+    email "admin@example.de"
+    password "testpassword"
+    first_name "real"
+    last_name "admin"
+    admin true
+  end
 end
