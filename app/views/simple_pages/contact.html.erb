@@ -18,7 +18,7 @@
   <hr>
   <h1 class="contact-heading">Contact Us</h1>
 
-  <%= form_with(url:"/simple_pages/thank_you", method: "post", local: true, class: "contact-form") do |form| %>
+  <%= form_with(url:"/simple_pages/thank_you", method: "post", local: true, class: "contact-form" ) do |form| %>
       <div class="form-group">
         <%= form.label :name %>
         <%= form.text_field :name, class: "form-control", placeholder: "Enter Name", required: true %>

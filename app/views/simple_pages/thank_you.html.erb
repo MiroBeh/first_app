@@ -1,5 +1,13 @@
-<div class="panel panel-default">
-  <div class="panel-body">
-    <p>Thank you. We have received your message and will respond as soon as possible.</p>
-  </div><!-- / panel-body -->
-</div><!-- / panel -->
+<div class="thank-you-content">
+  <div class="thank-you-box">
+    <div class="thank-you-message">
+      <h1>Thank you !</h1>
+      <p>Thanks for sending a message.  </p>
+      <p>You should receive a answer email soon.</p>
+      <%= link_to products_path do %> <button class="go-products">Products</button><%end%>
+    </div>
+    <div class="thank-you-footer">
+      <p>Another Message to send? <%= link_to "Click here to another message", simple_pages_contact_path %></p>
+    </div>
+</div>
+</div>
